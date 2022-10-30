@@ -4,7 +4,7 @@
     --Body-Font: 'Bai Jamjuree', sans-serif;
     --Font-Size: 1.2em;
     --White: #fff;
-    --Main-Fieldset:  rgb(52, 208, 255); 
+    --Fieldset-Color:  rgb(52, 208, 255); 
 }
 
 * {
@@ -14,15 +14,13 @@
 }
 
 body {
-    font-family: var(--Body-Font);
-    background-image: linear-gradient(to bottom, rgb(0, 37, 54), rgb(52, 208, 255));    
-    color: var(--White);
     margin: 50px 200px;
-    font-size: var(--Font-Size);
+    font: 400 var(--Font-Size) var(--Body-Font);
+    background-image: linear-gradient(to bottom, rgb(0, 37, 54), rgb(52, 208, 255));    
+    color: var(--White);    
 }
 
-#title {
-  
+#title {  
     text-align: center;    
 }
 
@@ -45,11 +43,10 @@ form {
 }
 fieldset {    
       border-image: linear-gradient(90deg, #73ff66, #bfff66, #fff266, #ffa666, #ff6673, #ff66bf, #f266ff, #a666ff, #6673ff)1;
-
 }
 
 legend {
-    color: rgb(52, 208, 255);    
+    color: var(--Fieldset-Color);    
 }
 
 input[type="text"],
@@ -113,4 +110,5 @@ textarea {
 .gap {
     margin-bottom: 50px;
 }
+
 
