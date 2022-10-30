@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --Body-Font: 'Bai Jamjuree', sans-serif;
+    --Font-Size: 1.2em;
+    --White: #fff;
+    --Main-Fieldset:  rgb(52, 208, 255); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: var(--Body-Font);
+    background-image: linear-gradient(to bottom, rgb(0, 37, 54), rgb(52, 208, 255));    
+    color: var(--White);
+    margin: 50px 200px;
+    font-size: var(--Font-Size);
+}
+
+#title {
+  
+    text-align: center;    
+}
+
+#description {
+    margin: 50px 0 10px;
+    text-align: center;    
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+form {
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.main-filedset {    
+    border-image: linear-gradient(180deg, rgb(52, 208, 255), rgb(20, 251, 217))1;
+}
+fieldset {    
+      border-image: linear-gradient(90deg, #73ff66, #bfff66, #fff266, #ffa666, #ff6673, #ff66bf, #f266ff, #a666ff, #6673ff)1;
+
+}
+
+legend {
+    color: rgb(52, 208, 255);    
+}
+
+input[type="text"],
+[type="email"],
+[type="number"] {
+    width: 80%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 11px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+[type="email"]::placeholder,
+[type="number"]::placeholder {
+    padding-left: 15px;
+    font-size: var(--Font-Size);
+}
+
+select,
+option,
+.dropdown
+ {
+    display: block;
+    margin:  0 auto 50px;
+    width: 50%;
+    height: 55px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.recommend,
+#improvement {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+textarea {
+    width: 100%;   
+    border-image: linear-gradient(90deg, #73ff66, #bfff66, #fff266, #ffa666, #ff6673, #ff66bf, #f266ff)1;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+#submit {
+    min-width: 100%;
+    min-height: 55px;
+    border: 1px solid var(--White);
+    border-radius: 8px;
+    background-image: linear-gradient(to left, rgb(0, 37, 54), rgb(52, 208, 255));
+    color: var(--White);
+    font: 700 1.1em var(--Body-Font); 
+    cursor: pointer;
+}
+
+.gap {
+    margin-bottom: 50px;
+}
+

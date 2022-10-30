@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Lotso' Coffee Survey Form</h1>
+        <p id="description">Full fill this amazing survey to continue with your WebDev Skills.</p>
+        <fieldset class="main-filedset">
+            <legend>Get in touch</legend>
+            <form id="survey-form">
+                <header>
+                    <div class="main-input">
+                        <fieldset>
+                            <legend>Name</legend>
+                            <label for="name" id="name-label"></label>
+                            <input type="text" id="name" required placeholder="Enter your name">
+                        </fieldset>
+                    </div>
+                    <div class="main-input">
+                        <fieldset>
+                            <legend>Email</legend>
+                            <label for="email" id="email-label"></label>
+                            <input type="email" id="email" required placeholder="Enter your Email">
+                        </fieldset>
+                    </div>
+                    <div class="main-input">
+                        <fieldset>
+                            <legend>Age</legend>
+                            <label for="number" id="number-label"></label>
+                            <input type="number" id="number" min="0" max="100" placeholder="Enter your Age">
+                        </fieldset>
+                    </div>
+                </header>
+                <fieldset class="gap">   
+                    <legend>Role</legend>                 
+                    <div class="main-input">
+                        <p id="description">Which option best describes your current role?</p>
+                        <select id="dropdown">
+                            <option value="" disabled selected>-- Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="full-time-job">Full Time Job</option>
+                            <option value="full-time-learner">Full Time Learner</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                </fieldset>
+                </div>
+                <fieldset class="gap">
+                    <legend>Recommend freeCodeCamp</legend>
+                    <p id="description">Would you recommend freeCodeCamp?</p>
+                    <div class="recommend">
+                        <input type="radio" id="definitely" name="recommend" value="Yes">
+                        <label for="definitely">Yes</label>
+                        <input type="radio" id="maybe" name="recommend" value="No">
+                        <label for="maybe">No</label>
+                        <input type="radio" id="maybe" name="recommend" value="Maybe">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="not-sure" name="recommend" value="I don´t know">
+                        <label for="not-sure">I don´t know</label>
+                        <input type="radio" id="not-sure" name="recommend" value="Can you repeat the cuestion ?">
+                        <label for="not-sure">Can you repeat the cuestion ?</label>
+                        <input type="radio" id="not-sure" name="recommend" value="You're not the boss of me now">
+                        <label for="not-sure">You're not the boss of me now</label>
+                        <input type="radio" id="not-sure" name="recommend" value="You're not the boss of me now">
+                        <label for="not-sure">You're not the boss of me now</label>
+                        <input type="radio" id="not-sure" name="recommend" value="And... you're not so big">
+                        <label for="not-sure">And... you're not so big</label>
+                    </div>
+                </fieldset>
+                <fieldset class="gap">
+                    <legend>Features FreeCodeCamp</legend>
+                    <div class="main-input card">
+                        <p id="description">What is your favorite feature of freeCodeCamp?</p>
+                        <select name="" id="">
+                            <option value="" disabled selected>-- Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="open-source">Open Source</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="gap">
+                    <legend>Certifications</legend>
+                    <p id="description">Certificarions to choose</p>
+                    <div id="improvement">
+                        <input type="checkbox" id="responsive-web-design" value="responsive-web-design">
+                        <label for="responsive-web-design">Responsive Web Design</label>
+                        <input type="checkbox" id="JavaScript" value="JavaScript">
+                        <label for="JavaScript">JavaScript Algorithms And Data Structures</label>
+                        <input type="checkbox" id="libraries" value="libraries">
+                        <label for="libraries">Font End Development Libraries</label>
+                        <input type="checkbox" id="database" value="database">
+                        <label for="database">Relational Database</label>
+                        <input type="checkbox" id="back-end" value="back-end">                        
+                        <label for="back-end">Back End Development And APIs</label>
+                        <input type="checkbox" id="testers" value="testers">
+                        <label for="testers">Quality Assurance</label>
+                        <input type="checkbox" id="scientific-computing" value="scientific-computing">
+                        <label for="">Scientific Computing With Python</label>
+                        <input type="checkbox" id="data-analysis" value="data-analysis">
+                        <label for="data-analysis">Data Analysis With Python</label>
+                        <input type="checkbox" id="security" value="security">
+                        <label for="security">Information Security</label>
+                        <input type="checkbox" id="machine-learning" value="machine-learning">
+                        <label for="machine-learning">Machine Learning With Python</label>
+                        <input type="checkbox" id="additional-courses" value="additional-courses">
+                        <label for="additional-courses">Coding Interview Prep</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <p id="description">Any comments or suggestions?</p>
+                    <textarea cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </fieldset>
+    </body>
+</html>
